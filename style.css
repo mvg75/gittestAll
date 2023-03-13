@@ -1,0 +1,207 @@
+/* Подключение шрифтов*/
+@font-face { /* фонт заголовков */
+   font-family: HeadFont;
+   src: url(fnt/Spectral-ExtraBold.ttf);
+}
+@font-face {  /* фонт основного текста */
+   font-family: BasicTextFont;
+   src: url(fnt/Spectral-Regular.ttf);
+}
+
+* { /* Стили для всего*/
+text-align: center;
+margin: 0px auto;
+/* background-color: navy; */
+/*min-width: 640px;*/
+}
+body {
+min-width: 640px;
+position: relative;
+height: auto;
+min-height 100%;
+border: 10px solid yellow;
+background-color: navy;
+padding: 0px;
+font-size: 18px;
+font-family: BasicTextFont;
+text-align: center;
+cursor: default;
+}
+header { /*стиль заголовка*/
+width: 96%;
+/*height: 200px;*/
+/*border: 2px solid red;
+border-radius: 5px;*/
+font-size: 1em;
+font-family: HeadFont;
+margin-top: 2px;
+/*padding: 25px;*/
+}
+article { /*стиль заголовка*/
+width: 96%;
+}
+.deviz { /* стиль девиза */
+  font-size: 0.5em;
+  font-family: BasicTextFont;
+  text-align: right;
+  color: white;
+}
+.navlink { /*стили ссылок в панели навигации*/
+  line-height: 40px;/*Высота строки + верт. центрирования текста*/
+  width: 230px; /*Фиксируем ширину блока*/
+  text-align: center; /*Центрируем текст по горизонтали*/
+
+border: 1px solid lightblue;
+padding: 0px;
+border-radius: 6px;
+font-family: HeadFont;
+font-size: 1.5em;
+display: block;
+cursor: pointer;
+margin: 4px;
+}
+
+.navlink:hover {
+	background-color: #000030;
+	border: 1px solid lightblue;
+  background-color:darkblue;
+	border-radius: 6px;
+	box-shadow: 8px 8px 5px gray;
+}
+
+.navig { /* стиль кнопок навигации */
+}
+.ns {
+/*  background: yellow;*/
+  width: 66%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  padding-bottom: 20px;
+  padding-top: 20px;
+
+  border-top: 2px solid white;
+  border-bottom:2px solid white;
+
+}
+
+.actnav {
+  background-color:blue;
+  color: white;
+}
+.deactnav {
+  background-color:silver;
+  color: gray;
+}
+h1 { /*  стиль заголовка 1*/
+  font-size: 3em;
+  color: white;
+  font-family: HeadFont;
+}
+.zagl {
+  font-size: 3em;
+  color: white;
+  font-family: HeadFont;
+  margin-top:-25px;
+}
+
+hr {
+  width: 65%;
+  color: white;
+}
+article { /*стиль статьи*/
+  margin-top: 10px;
+  width: 96%;
+  background-color: white;
+  border: 2px solid blue;
+  border-radius: 5px;
+  font-size: 1em;
+  font-family: BasicTextFont;
+  background-color: yellow;
+}
+.hide { /* спрятать элемент */
+  display: none;
+}
+.customText1 { /* стиль для произволього теста*/
+border: 5px solid red;
+}
+#p1 { /*  стиль парагрофа 1*/
+  color: red;
+
+}
+#p2 { /*  стиль парагрофа 2*/
+  color: green;
+
+}
+#p3 { /*  стиль парагрофа 3*/
+
+  color: blue;
+}
+#p4 { /*  стиль парагрофа 3*/
+
+  color: yellow;
+}
+#p4 { /*  стиль парагрофа 3*/
+
+  color: pink;
+}
+.red {
+color: red;
+font-size: 24px;
+background: green;
+display: flex;
+}
+.tshow {
+display: block;
+}
+.thide {
+display: none;
+}
+.picmain { /* стиль картинки в на главной*/
+background: red;
+margin: 20px;
+padding: 0;
+object-fit: cover;
+border: 1px solid lightblue;
+border-radius: 150px;
+}
+.tss1 {
+  border: 1px solid black;
+  background: white ;
+  color: black;
+  width: 40%;
+  margin: 0;
+  float: left;
+  text-align: left;
+}
+.tss2 {
+border: 1px solid white;
+background: black;
+color: white;
+ float: left;
+ width: 59%;
+
+}
+.picz {
+  background-color:  red;
+  /*background-image: url('img/photo1.png');*/
+  background-position: center center;
+  width: 100%;
+  height: 100%;
+}
+.tabs1 {
+margin-left: 1%;
+}
+.zzz {
+  background-color: green;
+  display: block;
+}
+.TabAboutMe1 {
+  font-family:  BasicTextFont;
+  font-size: 3em;
+  color: white;
+}
