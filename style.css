@@ -57,6 +57,7 @@ font-size: 1.5em;
 display: block;
 cursor: pointer;
 margin: 4px;
+text-decoration: none;
 }
 
 .navlink:hover {
@@ -65,7 +66,17 @@ margin: 4px;
   background-color:darkblue;
 	border-radius: 6px;
 	box-shadow: 8px 8px 5px gray;
+  text-decoration: underline;
 }
+.navlink:focus {
+	background-color: #000030;
+	border: 1px solid lightblue;
+  background-color:darkblue;
+	border-radius: 6px;
+	box-shadow: 8px 8px 5px gray;
+  text-decoration: none;
+}
+
 
 .navig { /* стиль кнопок навигации */
 }
