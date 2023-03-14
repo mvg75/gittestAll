@@ -37,9 +37,7 @@ font-family: HeadFont;
 margin-top: 2px;
 /*padding: 25px;*/
 }
-article { /*стиль заголовка*/
-width: 96%;
-}
+
 .deviz { /* стиль девиза */
   font-size: 0.5em;
   font-family: BasicTextFont;
@@ -126,8 +124,8 @@ article { /*стиль статьи*/
 .hide { /* спрятать элемент */
   display: none;
 }
-.customText1 { /* стиль для произволього теста*/
-border: 5px solid red;
+.artCustom { /* стиль для выбра секций в главном меню*/
+
 }
 #p1 { /*  стиль парагрофа 1*/
   color: red;
@@ -192,9 +190,6 @@ color: white;
   background-position: center center;
   width: 100%;
   height: 100%;
-}
-.tabs1 {
-margin-left: 1%;
 }
 .zzz {
   background-color: green;

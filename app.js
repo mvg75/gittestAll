@@ -1,3 +1,4 @@
+const defAct=1; // активная кнопка - вкладка по умолчанию
 function report() { //отладочный вывод
 console.log('keys=',knopki);
 console.log('abzats=',pashki);
@@ -36,17 +37,17 @@ function ClicKey(item,index) {
 
 
 const knopki =  document.querySelectorAll('.navig');// выборка кнопок
-const pashki =  document.querySelectorAll('.customText1');;// выборка абзацев текста
+const pashki =  document.querySelectorAll('.artCustom');;// выборка абзацев текста
 report();
 clearPashki(); // все абзацы неактивны
 clearKnopki(); // все кнопки неактивны
 knopki.forEach(ClicKey);
 // первая вкладка активна
-pashki[0].classList.remove ("thide");
-pashki[0].classList.add ("tshow");
+pashki[defAct].classList.remove ("thide");
+pashki[defAct].classList.add ("tshow");
 // аепвая ччылка активна
-knopki[0].classList.remove ("deactnav");
-knopki[0].classList.add ("actnav");
+knopki[defAct].classList.remove ("deactnav");
+knopki[defAct].classList.add ("actnav");
 // добавление обработчиков на ссылки навигации
 
 
