@@ -211,3 +211,8 @@ color: white;
   font-size: 3em;
   color: white;
 }
+:focus {
+  outline: 1;
+  color: white;
+
+}
