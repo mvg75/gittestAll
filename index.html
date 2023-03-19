@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
 <!-- {}{}{}{}{}{}{} таблицы стилей}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}-->
-    <link rel="stylesheet" href="style.css">
+    <link  href="normalize.css" rel="stylesheet">
+    <link  href="style.css" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>mvg</title>
 </head>
@@ -13,7 +14,7 @@
 
     <p class="deviz">...потому что могу !</p>
     <h1 class="hide">Матюшин Сергей Владимирович</h1>
-    <p class="zagl" title="!!!!">Мой персональный сайт</p>
+    <div class="zagl" title="Страничка Матюшина Сергея Владимировича">Мой персональный сайт</div>
       <nav class="ns">
         <a href="#" class="navlink navig" style="float: left">Самая главная</a>
         <a href="#" class="navlink navig" style="float: left">Работа</a>
@@ -27,72 +28,70 @@
   <main>
   <section class="artCustom">  <!--  Окно ГЛАВНАЯ -->
     <h2>Обо мне</h2>
-    <ul>
-      <li> <a href="#">Г. Рязань</a> </li>
-      <li> <a href="#">ООО АГРОЭЛ</a> </li>
-      <li> <a href="#">Моя семья</a> </li>
-    <ul>
-    <figure>
-      <img src="img/photo1.png" alt="Матюшин Сергей вдадимирович" width="400px">
-    </figure>
-  <!--
+    <ul class="advInfo">
+      <li> <a class="linkNoDecoration" href="#">Г. Рязань</a> </li>
+      <li> <a class="linkNoDecoration" href="#">ООО АГРОЭЛ</a> </li>
+      <li> <a class="linkNoDecoration" href="#">Моя семья</a> </li>
+    </ul>
 
-    <div class="tss1">
-      dsgfdgfdfhfgh <br>
-      dsgfdgfdfhfgh <br>
-      dsgfdgfdfhfgh
-      dsgfdgfdfhfgh <br>
-      dsgfdgfdfhfgh <br>
-      dsgfdgfdfhfgh
-      dsgfdgfdfhfgh <br>
-      dsgfdgfdfhfgh <br>
-      dsgfdgfdfhfgh
+
+    <div  class="mainCol">
+        <img src="img/photo1.png" alt="Матюшин Сергей вдадимирович" width="400px">
+    </div>
+
+
+
+    <div class="mainCol2">
+жо
+    <table style="display:inline">
+          <tr>
+            <td >Фамилия:</td><td>Матюшин</td>
+          </tr>
+          <tr>
+            <td>Имя:</td><td>Сергей</td>
+          </tr>
+          <tr>
+            <td>Отчество:</td><td>Владимирович</td>
+          </tr>
+          <tr>
+            <td>Год рождения:</td><td>1975</td>
+          </tr>
+          <tr>
+            <td>Семейное положение:</td><td>Женат</td>
+          </tr>
+          <tr>
+            <td>Обучался в:</td>
+              <td> <ul>
+                    <li>Школа №13 г. Рязань</li>
+                    <li>Школа №68 г. Рязань</li>
+                    <li>Колледж "Метод" г.Москва</li>
+                    <li>РГРТА г. Рязань</li>
+                    <li>РПИ г. Рязань</li>
+                   <ul>
+
+            </td>
+          </tr>
+          <tr>
+            <td>Профессия:</td><td>Инженер</td>
+          </tr>
+          <tr>
+            <td>Место жительства:</td><td>Г. Рязань</td>
+          </tr>
+          <tr>
+            <td>Социальные сети:</td><td>VK</td>
+          </tr>
+          <tr>
+            <td>Эл. почта:</td><td>mvg_soft@mail.ru</td>
+          </tr>
+          <tr>
+          <td>Телефон:</td> <td> 89206341499</td>
+        </tr>
+        </table>
+па
       </div>
 
 
-      <div class="tss2 TabAboutMe1">
-dfdsgdfgffff
-          <table>
-                <tr>
-                  <td >Фамилия:</td><td>Матюшин</td>
-                </tr>
-                <tr>
-                  <td>Имя:</td><td>Сергей</td>
-                </tr>
-                <tr>
-                  <td>Отчество:</td><td>Владимирович</td>
-                </tr>
-                <tr>
-                  <td>Год рождения:</td><td>1975</td>
-                </tr>
-                <tr>
-                  <td>Семейное положение:</td><td>Женат</td>
-                </tr>
-                <tr>
-                  <td>Учебные учреждения:</td><td>
-                                          fcgchgvjh
-                                       </td>
-                </tr>
-                <tr>
-                  <td>Профессия:</td><td>Инженер</td>
-                </tr>
-                <tr>
-                  <td>Место жительства:</td><td>Г. Рязань</td>
-                </tr>
-                <tr>
-                  <td>Социальные сети:</td><td>VK</td>
-                </tr>
-                <tr>
-                  <td>Эл. почта:</td><td>mvg_soft@mail.ru</td>
-                </tr>
-                <tr>
-                <td>Телефон:</td> <td> 89206341499</td>
-              </tr>
-              </table>
-    </div>
-<br style="clear:both;">
--->
-</section>
+    </section>
     <section class="artCustom" id="p2">
         <h2>Моя работа</h2>
         <p> <em>Lorem ipsum dolor</em> sit amet,<strong> consectetur </strong>adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.

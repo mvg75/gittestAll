@@ -9,33 +9,43 @@
 }
 
 * { /* Стили для всего*/
-text-align: center;
-margin: 0px auto;
+/*margin: 0px auto;*/
 /* background-color: navy; */
 /*min-width: 640px;*/
 }
+img: {max-width: 100% }
+
 body {
+margin: 0;
+padding: 0;
+font-size: 18px;
+font-family: BasicTextFont,Arial,sans-serif;
+font-weight: 400;
+line-height: 24px;
+color: white ;
+background-color: navy;
+background-image: linear-gradient(45deg,navy,blue);
+/*background-image: url("img/cher.png");
+background-position: top center;
+background-repeat: no-repeat;*/
+/* не рекомендовано академией*/
+cursor: default;
 min-width: 640px;
 position: relative;
 height: auto;
 min-height 100%;
 border: 10px solid yellow;
-background-color: navy;
-padding: 0px;
-font-size: 18px;
-font-family: BasicTextFont;
-text-align: center;
-cursor: default;
+
+
 }
 header { /*стиль заголовка*/
 width: 96%;
-/*height: 200px;*/
-/*border: 2px solid red;
-border-radius: 5px;*/
 font-size: 1em;
 font-family: HeadFont;
 margin-top: 2px;
-/*padding: 25px;*/
+text-align: center;
+margin: 0px auto;
+
 }
 
 .deviz { /* стиль девиза */
@@ -59,7 +69,13 @@ cursor: pointer;
 margin: 4px;
 text-decoration: none;
 }
-
+.advInfo {
+  list-style: none;
+  font-size: 1.5em;
+  line-height: 35px;
+  text-align: center;
+  margin: 0;
+}
 .navlink:hover {
 	background-color: #000030;
 	border: 1px solid lightblue;
@@ -76,13 +92,45 @@ text-decoration: none;
 	box-shadow: 8px 8px 5px gray;
   text-decoration: none;
 }
+.linkNoDecoration {
+  /*border: 1px solid white;
+  border-radius: 5px;*/
+  text-decoration: none;
+  color: inherit;
+/*  background-color: blue; */
+  font:inherit;
+  vertical-align: middle;
 
-
+}
+.linkNoDecoration:hover,.linkNoDecoration:focus {
+  background-color: navy;
+  color: white;
+  border: 1px solid white;
+  border-radius: 5px;
+  text-decoration: underline;
+  box-shadow: 8px 8px 5px gray;
+}
+main h2 {
+  color:darkblue;
+  text-align: center;
+}
+.mainCol { /* колонка на главном экране*/
+background-color: red;
+color: silver;
+display: inline;
+width: 49%;
+}
+.mainCol2 { /* колонка на главном экране*/
+background-color: yellow;
+color: black;
+display: inline;
+width: 40%;
+}
 .navig { /* стиль кнопок навигации */
 }
 .ns {
 /*  background: yellow;*/
-  width: 66%;
+/*  width: 66%;*/
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -116,27 +164,16 @@ h1 { /*  стиль заголовка 1*/
   color: white;
   font-family: HeadFont;
   margin-top:-25px;
+/*  background: red;*/
 }
 
-hr {
-  width: 65%;
-  color: white;
-}
-article { /*стиль статьи*/
-  margin-top: 10px;
-  width: 96%;
-  background-color: white;
-  border: 2px solid blue;
-  border-radius: 5px;
-  font-size: 1em;
-  font-family: BasicTextFont;
-  background-color: yellow;
-}
+
 .hide { /* спрятать элемент */
   display: none;
 }
 .artCustom { /* стиль для выбра секций в главном меню*/
-
+width: auto;
+background-color: tomato;
 }
 #p1 { /*  стиль парагрофа 1*/
   color: red;
@@ -170,7 +207,8 @@ display: block;
 .thide {
 display: none;
 }
-.picmain { /* стиль картинки в на главной*/
+/*
+.picmain {
 background: red;
 margin: 20px;
 padding: 0;
@@ -178,6 +216,7 @@ object-fit: cover;
 border: 1px solid lightblue;
 border-radius: 150px;
 }
+*/
 .tss1 {
   border: 1px solid black;
   background: white ;
@@ -215,4 +254,8 @@ color: white;
   outline: 1;
   color: white;
 
+}
+.tl1 {
+  color:red;
+  text-align: left;
 }
