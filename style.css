@@ -13,7 +13,9 @@
 /* background-color: navy; */
 /*min-width: 640px;*/
 }
-img: {max-width: 100% }
+*,*::after,*::before {
+  box-sizing: border-box;
+}
 
 body {
 margin: 0;
@@ -30,13 +32,16 @@ background-position: top center;
 background-repeat: no-repeat;*/
 /* не рекомендовано академией*/
 cursor: default;
-min-width: 640px;
+min-width: 300px;
 position: relative;
 height: auto;
 min-height 100%;
 border: 10px solid yellow;
+}
 
-
+td, th {
+    white-space: normal; /* Only needed when it's set differntly somewhere else */
+    word-wrap: break-word;
 }
 header { /*стиль заголовка*/
 width: 96%;
@@ -45,20 +50,15 @@ font-family: HeadFont;
 margin-top: 2px;
 text-align: center;
 margin: 0px auto;
+line-height: 46px;/*Высота строки + верт. центрирования текста*/
 
 }
 
-.deviz { /* стиль девиза */
-  font-size: 0.5em;
-  font-family: BasicTextFont;
-  text-align: right;
-  color: white;
-}
+
 .navlink { /*стили ссылок в панели навигации*/
-  line-height: 40px;/*Высота строки + верт. центрирования текста*/
-  width: 230px; /*Фиксируем ширину блока*/
-  text-align: center; /*Центрируем текст по горизонтали*/
-
+line-height: 40px;/*Высота строки + верт. центрирования текста*/
+width: 230px; /*Фиксируем ширину блока*/
+text-align: center; /*Центрируем текст по горизонтали*/
 border: 1px solid lightblue;
 padding: 0px;
 border-radius: 6px;
@@ -68,13 +68,6 @@ display: block;
 cursor: pointer;
 margin: 4px;
 text-decoration: none;
-}
-.advInfo {
-  list-style: none;
-  font-size: 1.5em;
-  line-height: 35px;
-  text-align: center;
-  margin: 0;
 }
 .navlink:hover {
 	background-color: #000030;
@@ -93,38 +86,99 @@ text-decoration: none;
   text-decoration: none;
 }
 .linkNoDecoration {
-  /*border: 1px solid white;
-  border-radius: 5px;*/
+  line-height: 40px;/*Высота строки + верт. центрирования текста*/
+  width: 230px; /*Фиксируем ширину блока*/
+  text-align: center; /*Центрируем текст по горизонтали*/
+  border: 1px solid transparen;
+  padding: 0px;
+  border-radius: 6px;
+  font-family: HeadFont;
+  font-size: 1.5em;
+  display: block;
+  cursor: pointer;
+  margin: 4px;
   text-decoration: none;
-  color: inherit;
-/*  background-color: blue; */
-  font:inherit;
-  vertical-align: middle;
-
+  color: green;
 }
+
+.advInfo {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  padding-bottom: 20px;
+  padding-top: 20px;
+
+/*
+  list-style: none;
+  font-size: 1.5em;
+  line-height: 35px;
+  text-align: center;
+  display: flex;
+  background-color: silver;
+  justify-content: center;
+  /*align-items: center;
+  align-content: center;*/
+}
+
+
 .linkNoDecoration:hover,.linkNoDecoration:focus {
+  background-color: #000030;
+	border: 1px solid lightblue;
+  background-color:darkblue;
+	border-radius: 6px;
+	box-shadow: 8px 8px 5px gray;
+  text-decoration: none;
+outline: none;
+}
+/*.linkNoDecoration:hover,.linkNoDecoration:focus {
   background-color: navy;
   color: white;
   border: 1px solid white;
-  border-radius: 5px;
   text-decoration: underline;
+  border-radius: 5px;
   box-shadow: 8px 8px 5px gray;
-}
+  padding-left: 25px;
+  padding-right: 25px;
+  /*margin-right: 20px;
+  /*padding-left: 25px;
+  padding-right: 25px;
+}*/
 main h2 {
-  color:darkblue;
+  color:white;
   text-align: center;
+  font-size: 42px;
 }
 .mainCol { /* колонка на главном экране*/
-background-color: red;
+/*background-color: red;*/
 color: silver;
-display: inline;
-width: 49%;
+width: 50%;
+text-align: center;
+justify-content: center;
+/*flex-grow: 1;*/
+/*display: inline;*/
+min-height: 200px; /* for Demo only */
+display: flex;
+align-items: center;
+justify-content: center;
+box-sizing: border-box;
 }
 .mainCol2 { /* колонка на главном экране*/
-background-color: yellow;
+/*background-color: silver;*/
 color: black;
-display: inline;
-width: 40%;
+/*display: inline;*/
+width: 50%;
+box-sizing: border-box;
+display: flex;
+align-items: center;
+justify-content: center;
+box-sizing: border-box;
+
+/*flex-grow: 1;*/
 }
 .navig { /* стиль кнопок навигации */
 }
@@ -159,26 +213,38 @@ h1 { /*  стиль заголовка 1*/
   color: white;
   font-family: HeadFont;
 }
+.deviz { /* стиль девиза */
+  font-size: 0.5em;
+  font-family: BasicTextFont;
+  text-align: right;
+  color: silver;
+  margin-top:-15px;
+  }
 .zagl {
   font-size: 3em;
   color: white;
   font-family: HeadFont;
-  margin-top:-25px;
+  margin-top: -36px;
 /*  background: red;*/
 }
-
 
 .hide { /* спрятать элемент */
   display: none;
 }
 .artCustom { /* стиль для выбра секций в главном меню*/
 width: auto;
-background-color: tomato;
+/*background-color: tomato;*
+display:flex;
+flex-direction: row;
 }
 #p1 { /*  стиль парагрофа 1*/
   color: red;
-
 }
+ .pic1 {
+    width: 95%;
+    border-radius: 100px;
+ box-shadow: 8px 8px 5px gray;
+ }
 #p2 { /*  стиль парагрофа 2*/
   color: green;
 
@@ -194,6 +260,10 @@ background-color: tomato;
 #p4 { /*  стиль парагрофа 3*/
 
   color: pink;
+}
+.fbox {
+display: flex;
+box-sizing: border-box;
 }
 .red {
 color: red;
@@ -217,29 +287,8 @@ border: 1px solid lightblue;
 border-radius: 150px;
 }
 */
-.tss1 {
-  border: 1px solid black;
-  background: white ;
-  color: black;
-  width: 40%;
-  margin: 0;
-  float: left;
-  text-align: left;
-}
-.tss2 {
-border: 1px solid white;
-background: black;
-color: white;
- float: left;
- width: 59%;
-
-}
-.picz {
-  background-color:  red;
-  /*background-image: url('img/photo1.png');*/
-  background-position: center center;
-  width: 100%;
-  height: 100%;
+td {
+  border: 1px solid grey;
 }
 .zzz {
   background-color: green;
@@ -247,9 +296,18 @@ color: white;
 }
 .TabAboutMe1 {
   font-family:  BasicTextFont;
-  font-size: 3em;
+  font-size: 38px;
+  line-height: 36px;
   color: white;
+  width: 95%;
+  table-layout:fixed;
+/*border: 5px solid grey;*/
+box-shadow: 8px 8px 5px gray;
+
+
+
 }
+
 :focus {
   outline: 1;
   color: white;

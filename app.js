@@ -1,4 +1,4 @@
-const defAct=1; // активная кнопка - вкладка по умолчанию
+const defAct=0; // активная кнопка - вкладка по умолчанию
 function report() { //отладочный вывод
 console.log('keys=',knopki);
 console.log('abzats=',pashki);
