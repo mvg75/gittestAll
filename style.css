@@ -32,16 +32,19 @@ background-position: top center;
 background-repeat: no-repeat;*/
 /* не рекомендовано академией*/
 cursor: default;
-min-width: 300px;
+min-width: 480px;
 position: relative;
 height: auto;
-min-height 100%;
 border: 10px solid yellow;
 }
 
 td, th {
-    white-space: normal; /* Only needed when it's set differntly somewhere else */
+    white-space: normal;
     word-wrap: break-word;
+}
+:focus {
+  outline: 1;
+  color: white;
 }
 header { /*стиль заголовка*/
 width: 96%;
@@ -51,7 +54,8 @@ margin-top: 2px;
 text-align: center;
 margin: 0px auto;
 line-height: 46px;/*Высота строки + верт. центрирования текста*/
-
+white-space: normal;
+word-wrap: break-word;
 }
 
 
@@ -89,17 +93,20 @@ text-decoration: none;
   line-height: 40px;/*Высота строки + верт. центрирования текста*/
   width: 230px; /*Фиксируем ширину блока*/
   text-align: center; /*Центрируем текст по горизонтали*/
-  border: 1px solid transparen;
   padding: 0px;
+  border: 1px solid red;
+    border-color:  transparent;
   border-radius: 6px;
   font-family: HeadFont;
   font-size: 1.5em;
   display: block;
   cursor: pointer;
   margin: 4px;
+  margin-left: 90px;
+  margin-right: 90px;
   text-decoration: none;
-  color: green;
-}
+  color: darkgray;
+  }
 
 .advInfo {
   list-style: none;
@@ -130,10 +137,13 @@ text-decoration: none;
   background-color: #000030;
 	border: 1px solid lightblue;
   background-color:darkblue;
-	border-radius: 6px;
+  border: 1px solid red;
+  border-radius: 6px;
 	box-shadow: 8px 8px 5px gray;
-  text-decoration: none;
-outline: none;
+  text-decoration: underline;
+  border-color:  transparent;
+  outline: none;
+  color: white;
 }
 /*.linkNoDecoration:hover,.linkNoDecoration:focus {
   background-color: navy;
@@ -225,6 +235,8 @@ h1 { /*  стиль заголовка 1*/
   color: white;
   font-family: HeadFont;
   margin-top: -36px;
+
+
 /*  background: red;*/
 }
 
@@ -303,16 +315,13 @@ td {
   table-layout:fixed;
 /*border: 5px solid grey;*/
 box-shadow: 8px 8px 5px gray;
-
-
-
-}
-
-:focus {
-  outline: 1;
-  color: white;
+overflow: hidden;
 
 }
+
+
+
+
 .tl1 {
   color:red;
   text-align: left;
